@@ -30,6 +30,16 @@ public class CollectionFramework {
             The COLLECTION interface is the ROOT interface of the collection framework hierarchy.
             Java does not provide the direct implementations of the collection interfaces, but provides implementations of its sub-interfaces like List, Set and Queue.
 
+
+            Common methods of Collection:
+            1. add()  -> insert the specified element to the collection
+            2. size()  -> returns the size of collection
+            3. remove()  -> removes the specified element from the collection
+            4. iterator()  -> returns an iterator to access elements of the collection
+            5. addAll()  -> adds all the elements of a specified collection to the collection
+            6. removeAll()  -> removes all the elements of the specified collection from the collection
+            7. clear()  -> removes all the elements of the collection
+
         */
 
 
