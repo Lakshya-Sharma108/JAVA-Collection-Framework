@@ -131,5 +131,20 @@ public class ArrayListExample1 {
         */
 
 
+        ArrayList<Integer> list4 = new ArrayList();
+        list4.add(11);
+        list4.add(12);
+        list4.add(13);
+        list4.add(14);
+        list4.add(15);
+
+        // getting an element using index
+        System.out.println(list4.get(1));
+
+        // setting an element using index
+        list4.set(2, 88);
+        System.out.println(list4);
+
+
     }
 }

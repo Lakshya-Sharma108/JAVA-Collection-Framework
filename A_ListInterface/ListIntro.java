@@ -23,6 +23,13 @@ public class ListIntro {
             3. Stack
             4. Vector
 
+
+            Some List specific Methods:
+            1. get()  -> helps to randomly access elements from lists
+            2. set()  -> changes elements of lists
+            3. toArray()  -> converts a list into an array
+            4. contains() -> returns true if a list contains element
+
         */
     }
 }
