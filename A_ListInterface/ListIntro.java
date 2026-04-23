@@ -14,7 +14,7 @@ public class ListIntro {
             List l1 = new ArrayList();   <- Right
             List l1 = new LinkedList();   <- Right
 
-            We can provide the SubClass or Concrete class reference to List variable - (upcasting)
+            We provide the implementation of SubClass or Concrete class to List reference variable - (upcasting)
 
 
             SubClass or Concrete class of List:
