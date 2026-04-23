@@ -22,7 +22,17 @@ public class CollectionFramework {
 
 
 
+
+
+            Simple Definitions:
+            Java Collection Framework provides various interfaces. These interfaces include several methods to perform different operation on collections.
+
+            The COLLECTION interface is the ROOT interface of the collection framework hierarchy.
+            Java does not provide the direct implementations of the collection interfaces, but provides implementations of its sub-interfaces like List, Set and Queue.
+
         */
+
+
 
         /*
          *  COLLECTION FRAMEWORK HIERARCHY ==>
@@ -68,6 +78,7 @@ public class CollectionFramework {
          *        (L)  = Legacy class (avoid in new code)
          *        |    = extends / implements
          *        ---  = concrete class (instantiable)
+         *
          */
     }
 }
