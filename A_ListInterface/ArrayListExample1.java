@@ -1,9 +1,6 @@
 package A_ListInterface;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ArrayListExample1 {
     public static void main(String[] args) {
@@ -145,6 +142,34 @@ public class ArrayListExample1 {
         list4.set(2, 88);
         System.out.println(list4);
 
+        // checking if an element exists in the list
+        System.out.println(list4.contains(15));
+
+
+
+
+
+
+
+
+        // Some more methods:
+        // sort() -> sort the ArrayList element
+        // clone() -> creates a new ArrayList with the same element, size and capacity
+        // ensureCapacity() -> Specifies the total elements the ArrayList can contain
+        // isEmpty() -> checks if the ArrayList is empty
+        // indexOf -> searches a specified element in an ArrayList and returns the index of element
+
+        ArrayList<Integer> list5 = new ArrayList();
+        list5.add(30);
+        list5.add(40);
+        list5.add(12);
+        list5.add(6);
+
+        System.out.println("Printing entire List: "+list5);
+
+        // sorting arraylist in increasing order
+        Collections.sort(list5);
+        System.out.println("Printing sorted List: "+list5);
 
     }
 }
