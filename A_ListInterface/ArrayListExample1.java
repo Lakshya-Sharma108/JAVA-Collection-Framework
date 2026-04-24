@@ -185,6 +185,16 @@ public class ArrayListExample1 {
         marks.ensureCapacity(100);  // It will not resize the array until 100 element
 
 
-        
+        // checking is a list empty or not -> returns -1 if elements not exits
+        System.out.println(newList.isEmpty());  // return false
+        System.out.println(marks.isEmpty());  // return true
+
+
+        // checking the index of a particular element
+        System.out.println(newList.indexOf(30));
+        System.out.println(newList.indexOf(6));
+        System.out.println(newList.indexOf(12));
+        System.out.println(newList.indexOf(100));
+
     }
 }
