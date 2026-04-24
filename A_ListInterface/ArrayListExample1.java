@@ -11,6 +11,16 @@ public class ArrayListExample1 {
             ArrayList changes its size dynamically -- depends on the situation
 
 
+            ArrayList Collection HIERARCHY ==>
+                                                   Iterable   -> interface
+                                                      |
+                                                  Collection   -> interface
+                                                      |
+                                                     List      -> interface
+                                                      |
+                                                   ArrayList   -> class
+
+
             We can only use wrapper classes as datatype
             Example :
             1. Integer
