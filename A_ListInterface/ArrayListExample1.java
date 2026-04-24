@@ -171,5 +171,20 @@ public class ArrayListExample1 {
         Collections.sort(list5);
         System.out.println("Printing sorted List: "+list5);
 
+        // How to sort in decreasing order???
+        Collections.sort(list5, Collections.reverseOrder());
+        System.out.println("Printing sorted List: "+list5);
+
+        // cloning list5 elements in new list
+        ArrayList<Integer> newList = (ArrayList<Integer>) list5.clone();
+        System.out.println("Cloned elements: "+newList);
+
+
+        // providing a minimum capacity to an arraylist -> if we do not provide a minimum capacity to an arraylist, then it reassigns (1.5 times of its size) each time the limit hits which impacts performance -> because reassigning is a hard and multistep process
+        ArrayList<Integer> marks = new ArrayList();
+        marks.ensureCapacity(100);  // It will not resize the array until 100 element
+
+
+        
     }
 }
