@@ -132,5 +132,52 @@ public class VectorExample1 {
         // checking if an element exists in the list
         System.out.println(vector4.contains(15));
 
+
+
+
+        // Some more methods:
+        // sort() -> sort the vector element
+        // clone() -> creates a new vector with the same element, size and capacity
+        // ensureCapacity() -> Specifies the total elements the vector can contain
+        // isEmpty() -> checks if the vector is empty
+        // indexOf -> searches a specified element in a vector and returns the index of element
+
+        Vector<Integer> vector5 = new Vector<>();
+        vector5.add(30);
+        vector5.add(40);
+        vector5.add(12);
+        vector5.add(6);
+
+        System.out.println("Printing entire vector5: "+vector5);
+
+        // sorting vector5 in increasing order
+        Collections.sort(vector5);
+        System.out.println("Printing sorted vector5: "+vector5);
+
+        // How to sort in decreasing order???
+        Collections.sort(vector5, Collections.reverseOrder());
+        System.out.println("Printing sorted vector5: "+vector5);
+
+        // cloning vector5 elements in new list
+        Vector<Integer> newList = (Vector<Integer>) vector5.clone();
+        System.out.println("Cloned elements: "+newList);
+
+
+        // providing a minimum capacity to a vector -> if we do not provide a minimum capacity to a vector, then it reassigns (1.5 times of its size) each time the limit hits which impacts performance -> because reassigning is a hard and multistep process
+        Vector<Integer> marks = new Vector<>();
+        marks.ensureCapacity(100);  // It will not resize the array until 100 element
+
+
+        // checking is a list empty or not -> returns -1 if elements not exits
+        System.out.println(newList.isEmpty());  // return false
+        System.out.println(marks.isEmpty());  // return true
+
+
+        // checking the index of a particular element
+        System.out.println(newList.indexOf(30));
+        System.out.println(newList.indexOf(6));
+        System.out.println(newList.indexOf(12));
+        System.out.println(newList.indexOf(100));
+
     }
 }
