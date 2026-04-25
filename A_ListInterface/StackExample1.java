@@ -141,5 +141,36 @@ public class StackExample1 {
         System.out.println(newList.indexOf(6));
         System.out.println(newList.indexOf(12));
         System.out.println(newList.indexOf(100));
+
+
+
+
+
+
+
+
+        // Stack specific methods:   (follow LIFO)
+        // push() ->  add element at the end
+        // pop() ->  remove element from end
+        // peek() -> returns last element
+        // search() -> if element exist in stack then returns the distance from top, else -1
+        // empty() -> returns true if stack is empty, else false
+
+        Stack<Integer> stack6 = new Stack<>();
+        stack6.push(12);
+        stack6.push(24);
+        stack6.push(36);
+        stack6.push(48);
+        System.out.println(stack6);
+
+        stack6.pop();
+        System.out.println(stack6);
+
+        System.out.println(stack6.peek());
+
+        System.out.println(stack6.search(12));
+        System.out.println(stack6.search(48));
+
+        System.out.println(stack6.empty());
     }
 }
