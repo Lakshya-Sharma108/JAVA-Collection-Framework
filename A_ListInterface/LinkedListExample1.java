@@ -1,9 +1,6 @@
 package A_ListInterface;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class LinkedListExample1 {
     public static void main(String[] args) {
@@ -56,6 +53,100 @@ public class LinkedListExample1 {
         linkedList1.add(20);
         linkedList1.add(30);
         System.out.println(linkedList1);
+        linkedList1.add(40);
+        System.out.println(linkedList1);
+
+        // Removing elements
+        linkedList1.remove(1);  // needs index to remove elements
+        System.out.println(linkedList1);
+
+
+        // Another linkedList
+         LinkedList<Integer> linkedList2 = new LinkedList<>();
+
+        // Adding element to linkedList2
+        linkedList2.add(110);
+        linkedList2.add(120);
+        linkedList2.add(130);
+        linkedList2.add(140);
+        linkedList2.add(150);
+        System.out.println(linkedList2);
+
+        // inserting linkedList2 all elements in linkedList1
+        linkedList1.addAll(linkedList2);  // addAll() can do this
+        System.out.println("With inserted element: "+linkedList1);
+
+        // removing linkedList2 all elements from linkedList1
+        linkedList1.removeAll(linkedList2);  // removeAll() can do this
+        System.out.println("Without inserted element: "+linkedList1);
+
+        // checking the size of linkedList
+        System.out.println("Size of linkedList1: "+linkedList1.size());
+        System.out.println("Size of linkedList2: "+linkedList2.size());
+
+        // removing all elements from linkedList2
+        linkedList2.clear();
+        System.out.println(linkedList2);
+
+
+
+
+
+        // iterator():
+        // Its a standard way to travel on different collections
+
+        // for LinkedList -> we need LinkedList iterator
+        // for ArrayList -> we need ArrayList iterator
+        // for Stack -> we need Stack iterator
+        // for Vector -> we need Vector iterator
+
+        //Example:
+        LinkedList<Integer> linkedList3 = new LinkedList<>();
+        linkedList3.add(100);
+        linkedList3.add(200);
+        linkedList3.add(300);
+        linkedList3.add(400);
+        linkedList3.add(500);
+
+        // I want traverse linkedList3 using iterator
+        // Creating iterator for linkedList3
+        Iterator<Integer> iterator = linkedList3.iterator();
+        while (iterator.hasNext()){
+            System.out.println("Element: "+iterator.next());
+        }
+
+
+
+        /*
+            Working of 2 methods of Iterator --> 1. hasNext()  2. next()
+
+            1. hasNext() -> it starts/points from the first element and if there is another element then it returns true and sits to that next element if there is no elements left then it returns false
+
+            2. next() -> it contains the current element of hasNext()
+
+            Example:
+
+            list = [10, 20, 30];
+
+            step 1:    [ 10,      20,      30 ]
+                       hasNext
+                       true
+                       next()
+
+
+            step2:     [ 10,      20,      30 ]
+                                 hasNext
+                                 true
+                                 next()
+
+
+            step3:     [ 10,      20,      30 ]
+                                          hasNext
+                                          false -> no element left
+                                          next()
+
+        */
+
 
     }
 }
