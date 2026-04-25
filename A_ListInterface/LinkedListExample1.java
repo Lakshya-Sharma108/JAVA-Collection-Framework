@@ -148,5 +148,75 @@ public class LinkedListExample1 {
         */
 
 
+
+        LinkedList<Integer> linkedList4 = new LinkedList<>();
+        linkedList4.add(11);
+        linkedList4.add(12);
+        linkedList4.add(13);
+        linkedList4.add(14);
+        linkedList4.add(15);
+
+        // getting an element using index
+        System.out.println(linkedList4.get(1));
+
+        // setting an element using index
+        linkedList4.set(2, 88);
+        System.out.println(linkedList4);
+
+        // checking if an element exists in the list
+        System.out.println(linkedList4.contains(15));
+        System.out.println(linkedList4.contains(105));
+
+
+
+
+        // Some more methods:
+        // sort() -> sort the ArrayList element
+        // clone() -> creates a new ArrayList with the same element, size and capacity
+        // isEmpty() -> checks if the ArrayList is empty
+        // indexOf -> searches a specified element in an ArrayList and returns the index of element
+        // lastIndexOf -> give the last occurrence of a specified element
+
+        LinkedList<Integer> linkedList5 = new LinkedList<>();
+        linkedList5.add(30);
+        linkedList5.add(40);
+        linkedList5.add(12);
+        linkedList5.add(6);
+
+        System.out.println("Printing entire List: "+linkedList5);
+
+        // sorting arraylist in increasing order
+        Collections.sort(linkedList5);
+        System.out.println("Printing sorted List: "+linkedList5);
+
+        // How to sort in decreasing order???
+        Collections.sort(linkedList5, Collections.reverseOrder());
+        System.out.println("Printing sorted List: "+linkedList5);
+
+        // cloning linkedList5 elements in new list
+        LinkedList<Integer> newList = (LinkedList<Integer>) linkedList5.clone();
+        System.out.println("Cloned elements: "+newList);
+
+
+        // providing a minimum capacity to an linkedList -> if we do not provide a minimum capacity to an linkedList5, then it reassigns (1.5 times of its size) each time the limit hits which impacts performance -> because reassigning is a hard and multistep process
+        LinkedList<Integer> marks = new LinkedList<>();
+
+        // checking is a list empty or not -> returns -1 if elements not exits
+        System.out.println(newList.isEmpty());  // return false
+        System.out.println(marks.isEmpty());  // return true
+
+
+        // checking the index of a particular element
+        System.out.println(newList.indexOf(30));
+        System.out.println(newList.indexOf(6));
+        System.out.println(newList.indexOf(12));
+        System.out.println(newList.indexOf(100));
+
+
+        // checking the last index of a particular element
+        System.out.println(linkedList5.lastIndexOf(40));
+        System.out.println(linkedList5.lastIndexOf(6));
+
+
     }
 }
