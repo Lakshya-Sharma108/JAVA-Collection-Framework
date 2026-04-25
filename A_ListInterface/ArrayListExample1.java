@@ -206,5 +206,63 @@ public class ArrayListExample1 {
         System.out.println(newList.indexOf(12));
         System.out.println(newList.indexOf(100));
 
+
+
+
+        /*
+            LinkedList as Queue and Dequeue:
+            Since the LinkedList calss also implements the Queue and Dequeue interface, it can implement methods of interfaces as well.
+
+            Here are some of the commonly used methods:
+            addFirst() -> adds the specified element at the beginning of the linkedlist
+            addLast() -> adds the specified element at the end of the linkedlist
+            getFirst() -> returns the first element
+            getLast() -> returns the last element
+            removeFirst() -> removes the first element
+            removeLast() -> removes the last element
+            peek() -> returns the first element (head) of the linkedlist
+            poll() -> returns and removes the first element (head) of the linkedlist
+            offer() -> adds the specified element at the end of the linkedlist
+
+        */
+
+        // creating new linkedlist
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(6);
+        linkedList.add(12);
+        linkedList.add(30);
+        System.out.println(linkedList);
+
+
+        // addFirst and addLast
+        linkedList.addFirst(101);
+        linkedList.addLast(102);
+        System.out.println(linkedList);
+
+
+        // getFirst and getLast
+        System.out.println(linkedList.getFirst());
+        System.out.println(linkedList.getLast());
+
+
+        // removeFirst and removeLast
+        linkedList.removeFirst();
+        linkedList.removeLast();
+        System.out.println(linkedList);
+
+
+        // peek and poll
+        System.out.println(linkedList.peek());
+        System.out.println(linkedList.poll());
+        System.out.println(linkedList);
+
+
+        // offer
+        linkedList.offer(69);
+        System.out.println(linkedList);
+
+
+
+
     }
 }
