@@ -209,6 +209,16 @@ public class ArrayListExample1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
         /*
             LinkedList as Queue and Dequeue:
             Since the LinkedList calss also implements the Queue and Dequeue interface, it can implement methods of interfaces as well.
