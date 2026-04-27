@@ -11,9 +11,17 @@ public class PriorityQueue {
 
             Imagine you're a doctor in an emergency room. Patients keep arriving — some with minor issues, some critical. You don't treat them in the order they arrived. You treat the most critical first.
 
+
+            Priority Queue Hierarchy:
+                                         Collection
+                                             |
+                                           Queue
+                                             |
+                                       Priority Queue
+
+
             In the case of Integer:
             "Highest priority" = smallest value (min comes out first)
-
 
 
             We can reverse the priority using:
