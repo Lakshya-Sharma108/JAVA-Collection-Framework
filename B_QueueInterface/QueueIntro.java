@@ -1,5 +1,8 @@
 package B_QueueInterface;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class QueueIntro {
     public static void main(String[] args) {
         /*
@@ -45,5 +48,29 @@ public class QueueIntro {
             poll() -> returns and removes the head of the queue, returns null if queue is empty
 
         */
+
+
+        // Queue creation with LinkedList
+        Queue<Integer> q = new LinkedList<>();
+
+        // offer() is recommended for inserting value
+        // q.add(10);
+        // q.add(20);
+        // q.add(30);
+        q.offer(10);
+        q.offer(20);
+        q.offer(30);
+        System.out.println(q);
+
+
+        // peek() is recommended for getting head of the queue
+        // System.out.println(q.element());
+        System.out.println(q.peek());
+
+
+        // poll() is recommended to remove the head of the queue
+        // q.remove();
+        q.poll();
+        System.out.println(q);
     }
 }
