@@ -31,6 +31,7 @@ public class HashSetExample {
         */
 
 
+        // no duplicates allowed
         Set<Integer> st = new HashSet<>();
         st.add(10);
         st.add(10);
@@ -42,6 +43,36 @@ public class HashSetExample {
         st.add(30);
         System.out.println(st);
 
+
+        Set<Integer> st1 = new HashSet<>();
+        Set<Integer> st2 = new HashSet<>();
+
+        st1.add(1);
+        st1.add(2);
+        st1.add(3);
+        st1.add(4);
+        st1.add(5);
+
+        st2.add(4);
+        st2.add(5);
+        st2.add(6);
+        st2.add(7);
+        st2.add(8);
+
+        // before retainAll()
+        System.out.println(st1);
+
+        st1.retainAll(st2);  // only common elements (b/w st1 and st2) will stay in st1
+
+        // after retainAll()
+        System.out.println(st1);
+
+
+        // checks if st1 contains all elements of st2  -> false
+        System.out.println(st1.containsAll(st2));
+
+        // checks if st2 contains all elements of st1  -> true
+        System.out.println(st2.containsAll(st1));
 
 
 
