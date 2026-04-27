@@ -39,9 +39,11 @@ public class QueueIntro {
 
             offer() -> insert the specified element into the queue, if the task is successful, offer() returns true, if not it returns false
 
+
             element() -> Returns the head of the queue, throws an exception if queue is empty
 
             peek() -> returns the head of the queue, returns null if the queue is empty
+
 
             remove() -> Returns and removes the head of the queue, Throws an exception if the queue is empty
 
