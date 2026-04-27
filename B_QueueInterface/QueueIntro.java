@@ -51,28 +51,5 @@ public class QueueIntro {
 
         */
 
-
-        // Queue creation with LinkedList
-        Queue<Integer> q = new LinkedList<>();
-
-        // offer() is recommended for inserting value
-        // q.add(10);
-        // q.add(20);
-        // q.add(30);
-        q.offer(10);
-        q.offer(20);
-        q.offer(30);
-        System.out.println(q);
-
-
-        // peek() is recommended for getting head of the queue
-        // System.out.println(q.element());
-        System.out.println(q.peek());
-
-
-        // poll() is recommended to remove the head of the queue
-        // q.remove();
-        q.poll();
-        System.out.println(q);
     }
 }
