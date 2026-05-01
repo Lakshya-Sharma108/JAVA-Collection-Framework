@@ -16,7 +16,9 @@ public class Student {
 
     public Student() {
     }
-    
+
+
+
     public String getName() {
         return name;
     }
@@ -48,6 +50,7 @@ public class Student {
     public void setCourse(String course) {
         this.course = course;
     }
+
 
     @Override
     public String toString() {
