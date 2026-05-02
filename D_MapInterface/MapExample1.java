@@ -120,6 +120,15 @@ public class MapExample1 {
         System.out.println(map.getOrDefault("NP", "Not found"));
 
 
+        // check if a key is present
+        System.out.println(map.containsKey("IND"));
+        System.out.println(map.containsKey("NP"));
+
+
+        // check if a value is present
+        System.out.println(map.containsValue("Bharat"));
+        System.out.println(map.containsValue("Nepal"));
+
 
 
     }
