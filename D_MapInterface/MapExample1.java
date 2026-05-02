@@ -19,8 +19,12 @@ public class MapExample1 {
             Map Characteristics:
             No duplicate keys: each key can map to at most one value. However, diff. keys can map to the same value.
             Key-Value association: It maintains an association of keys to value
+
             Implementations: Some of the well known classes that implement the map interface are HashMap, TreeMap, LinkedHasMap, and Hashtable.
-            Order:
+
+            Order: The Map interface itself doesn't guarantee any specific order of its elements. However, some specific implementation like TreeMap maintain a sorted order, and LinkedHashMap maintains the insertion order.
+
+            Null Value: Map allows null value and, depending on the implementation, null keys. For example, HashMap allow one null key and multiple null values, but hashtable does not null key or values.
 
         */
     }
