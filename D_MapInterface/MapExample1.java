@@ -2,6 +2,7 @@ package D_MapInterface;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapExample1 {
     public static void main(String[] args) {
@@ -142,6 +143,16 @@ public class MapExample1 {
         // check if a value is present
         System.out.println(map.containsValue("Bharat"));
         System.out.println(map.containsValue("Nepal"));
+
+
+        // replacing value
+        map.replace("IND", "Indonesia");
+        System.out.println(map);
+
+
+        // keySet returns a set of all the keys
+        Set<String> keySet = map.keySet();
+        System.out.println(keySet);
 
 
 
