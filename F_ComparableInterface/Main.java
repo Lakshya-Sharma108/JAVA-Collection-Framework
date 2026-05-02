@@ -1,6 +1,6 @@
 package F_ComparableInterface;
 
-import java.util.Date;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,8 +17,28 @@ public class Main {
 
             Integration: Automatically used by sorting methods in collections that do not specify a custom comparator (e.g. Collections.sort(list) when sorting a list of objects that implement a comparable)
 
-
-
         */
+
+
+
+
+        // Creating a arraylist
+        List<Integer> list = new ArrayList<>();
+        list.add(15);
+        list.add(8);
+        list.add(2);
+        list.add(80);
+
+        System.out.println(list);   // getting data as insertion order
+
+        Collections.sort(list);  // sorting the list
+
+        System.out.println(list);
+
+
+
+
+
+
     }
 }
