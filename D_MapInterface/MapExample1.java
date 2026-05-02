@@ -1,5 +1,6 @@
 package D_MapInterface;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -150,11 +151,19 @@ public class MapExample1 {
         System.out.println(map);
 
 
-        // keySet returns a set of all the keys
+        // keySet() returns a set of all the keys
         Set<String> keySet = map.keySet();
         System.out.println(keySet);
 
 
+        // values() returns a collection of all the values
+        Collection<String> values = map.values();
+        System.out.println(values);
+
+
+        // get all the entries of map
+        Set<Map.Entry<String, String>> entrySet = map.entrySet();
+        System.out.println(entrySet);
 
     }
 }
