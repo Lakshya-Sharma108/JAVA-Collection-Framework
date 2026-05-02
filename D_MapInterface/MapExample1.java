@@ -49,6 +49,20 @@ public class MapExample1 {
 
             containsValue(V): Checks if the specified value presents in the map or not
 
+            replace(K, V): Replace the value of the key K with the new specified value V
+
+            replace(K, oldValue, newValue): Replace the value of the key K with the new value newValue only if the key associated with the value oldValue
+
+            remove(K): Remove the entry from the map represented by the key K
+
+            remove(K, V): Remove the entry from the map that has key associated with value
+
+            keySet(): Returns a set of all the keys present in a map
+
+            values(): Returns a set of all the values present in a map
+
+            entrySet(): Returns a set of all the key/value mapping present in a map
+
 
 
         */
