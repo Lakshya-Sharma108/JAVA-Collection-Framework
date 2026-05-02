@@ -1,4 +1,4 @@
-package F_ComparableInterface;
+package E_ComparableInterface;
 
 import java.util.*;
 

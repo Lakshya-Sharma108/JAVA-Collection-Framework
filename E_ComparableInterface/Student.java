@@ -1,4 +1,4 @@
-package F_ComparableInterface;
+package E_ComparableInterface;
 
 public class Student implements Comparable<Student> {
     public String name;
