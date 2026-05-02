@@ -44,7 +44,7 @@ public class Main {
 
         List<Student> students = new ArrayList<>();
         students.add(new Student("lakshaya", 21, 60));
-        students.add(new Student("divya", 17, 40));
+        students.add(new Student("divya", 19, 40));
         students.add(new Student("ankit", 23, 65));
         students.add(new Student("shruti", 19, 46));
 
