@@ -168,5 +168,23 @@ public class MapExample1 {
         // Map.Entry<String, String> -> represents a single entry
         // map.entrySet -> represents whole entries
 
+
+
+
+
+
+
+        // Iterating over map -- foreach loop
+        Map<Integer, String> mapp = new HashMap<>();
+        mapp.put(1, "One");
+        mapp.put(2, "Two");
+        mapp.put(3, "Three");
+        mapp.put(4, "Four");
+        mapp.put(5, "Five");
+
+        for (Map.Entry<Integer, String> entry : mapp.entrySet()){
+            System.out.println("Key: "+entry.getKey() + " Value: "+entry.getValue());
+        }
+
     }
 }
