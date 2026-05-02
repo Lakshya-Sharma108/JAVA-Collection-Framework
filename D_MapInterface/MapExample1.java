@@ -29,6 +29,28 @@ public class MapExample1 {
 
             Null Value: Map allows null value and, depending on the implementation, null keys. For example, HashMap allow one null key and multiple null values, but hashtable does not null key or values.
 
+
+
+
+
+
+            Methods:
+            put(K,V): Insert the association of a key K and a value V into the map, if the key is already present, the new value replaces the old value.
+
+            putAll(): Insert all the entries from the specified map to this map
+
+            putIfAbsent(K, V): Insert the association if the key is not already with the value
+
+            get(K): Returns the value associated with the specified key K. If the key is not found it returns null
+
+            getOrDefault(K, defaultValue): Returns the value associated with the specified key K. if the key not found it returns the default value
+
+            containsKey(K): Checks if the specified key presents in the map or not
+
+            containsValue(V): Checks if the specified value presents in the map or not
+
+
+
         */
 
 
@@ -77,8 +99,8 @@ public class MapExample1 {
         // size
         System.out.println("Current size of map is: "+map.size());
 
-        map.clear();  // remove all data
-        System.out.println("Current size of map is: "+map.size());
+        //map.clear();  // remove all data
+        //System.out.println("Current size of map is: "+map.size());
 
 
 
