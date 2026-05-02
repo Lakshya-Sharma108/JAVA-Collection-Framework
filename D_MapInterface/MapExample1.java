@@ -1,5 +1,8 @@
 package D_MapInterface;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MapExample1 {
     public static void main(String[] args) {
         /*
@@ -27,5 +30,27 @@ public class MapExample1 {
             Null Value: Map allows null value and, depending on the implementation, null keys. For example, HashMap allow one null key and multiple null values, but hashtable does not null key or values.
 
         */
+
+
+
+        // Creation
+        // HashMap<String, String> mapping = new HashMap<>();   // first way
+
+        Map<String, String> mapping = new HashMap<>();    // second way
+
+
+        // insertion method
+        mapping.put("IN", "India");     // "key", "value"
+        mapping.put("UK", "United Kingdom");
+        mapping.put("US", "United States");
+        mapping.put("US", "America");       // same key holds updated value
+
+        System.out.println(mapping);
+
+
+
+
+        // 
+
     }
 }
