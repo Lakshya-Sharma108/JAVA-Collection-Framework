@@ -9,7 +9,18 @@ public class Main {
     public static void main(String[] args) {
         /*
             Comparator Interface:
+            Purpose: Provides a way to define a custom order for objects, separate from their natural.
+            Method to Implement: compare(T o1, T o2)
+                Functionality: Compares its two arguments for order.
+                Return Value: Returns a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
 
+            Usage Context: Ideal when you need multiple different ways of ordering objects, or when objects do not have a natural ordering.
+
+            Flexibility: Allows specifying the order externally, which is useful for sorting methods when you want to sort based on attributes that are not considered in natural ordering.
+
+            Integration: Used by providing an instance of Comparator to sorting methods, such as Collections.sort(list, comparator) or Arrays.sort(array, comparator).
+
+            Purpose: Provides a way to define a custom order for objects, separate from their natural
         */
 
 
