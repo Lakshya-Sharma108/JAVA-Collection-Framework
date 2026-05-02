@@ -50,7 +50,21 @@ public class MapExample1 {
 
 
 
-        // 
+        // second map
+        Map<String, String> map = new HashMap<>();
+
+        map.put("BR", "Brazil");
+
+        System.out.println("Before putAll(): "+ map);
+
+        map.putAll(mapping);
+
+        System.out.println("After putAll(): "+ map);
+
+
+
+
+
 
     }
 }
