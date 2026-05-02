@@ -77,6 +77,9 @@ public class MapExample1 {
         // size
         System.out.println("Current size of map is: "+map.size());
 
+        map.clear();  // remove all data
+        System.out.println("Current size of map is: "+map.size());
+
 
 
 
