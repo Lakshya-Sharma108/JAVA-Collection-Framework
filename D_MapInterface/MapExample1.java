@@ -66,5 +66,21 @@ public class MapExample1 {
 
 
 
+        // deletion using key
+        map.remove("US");
+        map.remove("UK");
+        System.out.println(map);
+
+
+
+
+        // size
+        System.out.println("Current size of map is: "+map.size());
+
+
+
+
+
+
     }
 }
