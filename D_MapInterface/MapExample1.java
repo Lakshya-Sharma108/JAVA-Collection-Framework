@@ -104,6 +104,21 @@ public class MapExample1 {
 
 
 
+        // put if absent
+        map.putIfAbsent("IN", "Bharat");   // it won't work, because IN key is present
+        map.putIfAbsent("IND", "Bharat");   // it will work, because IND key is not present
+        System.out.println(map);
+
+
+
+        // getting value using key
+        System.out.println(map.get("IND"));
+
+
+        // get or default  -- returns default if not found
+        System.out.println(map.getOrDefault("IN", "Not found"));
+        System.out.println(map.getOrDefault("NP", "Not found"));
+
 
 
 
