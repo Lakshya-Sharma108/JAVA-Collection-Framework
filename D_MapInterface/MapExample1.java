@@ -165,5 +165,8 @@ public class MapExample1 {
         Set<Map.Entry<String, String>> entrySet = map.entrySet();
         System.out.println(entrySet);
 
+        // Map.Entry<String, String> -> represents a single entry
+        // map.entrySet -> represents whole entries
+
     }
 }
