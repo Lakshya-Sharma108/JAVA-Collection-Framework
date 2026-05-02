@@ -37,6 +37,10 @@ public class Main {
 
 
 
+        // Now how to sort a list of custom objects, because an object contains many properties, so basis of which property we will sort the list of objects
+
+
+
 
 
 
