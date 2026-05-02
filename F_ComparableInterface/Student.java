@@ -1,6 +1,6 @@
 package F_ComparableInterface;
 
-public class Student implements Comparable {
+public class Student implements Comparable<Student> {
     public String name;
     public int age;
     public int weight;

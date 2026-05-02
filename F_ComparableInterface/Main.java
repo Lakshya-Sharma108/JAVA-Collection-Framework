@@ -52,6 +52,8 @@ public class Main {
 
         Collections.sort(students);  // first implement comparable interface in obj class
 
+        System.out.println(students);
+
 
 
 
