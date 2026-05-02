@@ -37,8 +37,20 @@ public class Main {
 
 
 
+
+
+
         // Now how to sort a list of custom objects, because an object contains many properties, so basis of which property we will sort the list of objects
 
+        List<Student> students = new ArrayList<>();
+        students.add(new Student("lakshaya", 21, 60));
+        students.add(new Student("divya", 17, 40));
+        students.add(new Student("ankit", 23, 65));
+        students.add(new Student("shruti", 19, 46));
+
+        System.out.println(students);
+
+        Collections.sort(students);  // first implement comparable interface in obj class
 
 
 
